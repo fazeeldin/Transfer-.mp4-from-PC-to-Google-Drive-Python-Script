@@ -15,11 +15,23 @@ the input source folder.
 
 
 ## FRONTEND
-Front end uses TKINTER
+TKINTER
 
-##BACKEND
+## BACKEND
 Python 3.7
 
-##PACKAGES USED
+## PACKAGES USED
 PyDrive
 
+## Things to take care of
+1. Generate Google Drive Api and download client_secrets.json file from your Google Dev Console. The json file should be kept in your
+working directory.
+2. google_drive.py and main.py should be in the same folder.
+
+# Step
+1. Run main.py.
+2. This will open up an authentication page in your default browser. Accept and add your project.
+3. Now a desktop window will open.
+4. Give the input link.
+5. Click "Transfor Now" button.
+6. Your file will be uploaded. Based on your internet speed, it may take some time.
