@@ -1,3 +1,4 @@
+# import necessary class from pydrive package
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 
@@ -38,7 +39,7 @@ def upload_file(title, filename, fid, full_path):
 def upload_file_inside_folder(title, filename, fid, full_path):
     
     file = drive.CreateFile({'title': title, 
-                             "parents": [{"kind": "drive#fileLink", "id": fid}]})  # Name of the file in my google drive that I want to have
+                             "parents": [{"kind": "drive#fileLink", "id": fid}]})  # Name of the file in my google drive that I want to have under a parent folder id
     file.SetContentFile(full_path + "\\" + filename) # Location and name of the file from where I have to get the file.
     file.Upload()
     return True
